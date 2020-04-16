@@ -1,0 +1,105 @@
+.header
+  margin-bottom: 30px
+  &-nav
+    border-top: 2px solid #f5f5f5
+    &__wrap
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &__menu
+      display: flex
+      align-items: center
+      border: none
+      padding: 20px 10px
+      color: #808080
+      font-size: 14px
+      font-weight: 500
+    &__categories
+      margin-right: 50px
+    &__deals
+      padding: 20px 50px
+      border: 3px solid #f5f5f5
+      border-top: none
+      border-bottom: none
+    &__select
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__icon
+      margin-right: 20px
+    &__select
+      display: flex
+      align-items: center
+.deals
+  &-wrap
+    &__item
+      padding: 20px 10px
+      color: #666666
+      font-size: 14px
+      font-weight: 500
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+      &:hover
+        background-color: #fafafa
+        cursor: pointer
+.nav
+  &-select
+    padding: 20px 28px
+@media (max-width: 1199.98px)
+  .header
+    &-nav
+      &__wrap
+        justify-content: space-between
+      &__deals
+        flex-grow: 1
+        padding: 0 10px
+      &__categories
+        margin-right: 10px
+      &__menu
+        width: 100%
+      &__select
+        justify-content: flex-start
+  .deals
+    &-wrap
+      display: flex
+      justify-content: space-between
+      &__item
+        margin-right: 0
+        padding: 15px 5px
+@media (max-width: 991.98px)
+  .header
+    &-nav
+      &__wrap
+        flex-wrap: wrap
+      &__categories
+        flex 1
+        width: 100%
+        margin: 0
+        margin-top: 20px
+        margin-bottom: 20px
+        order: 1
+        border-top: 1px solid #f5f5f5
+@media (max-width: 767.98px)
+  .header
+    &-nav
+      border: none
+      &__select
+        display: none
+        flex: 1
+        width: 100%
+        margin: 20px 0
+        justify-content: space-between
+      &__deals
+        display: none
+      &__categories
+        border: none
+@media (max-width: 354.98px)
+  .header
+    &-search
+      flex-direction: column
+      &__dpordown
+        align-self: flex-end
+
+
+

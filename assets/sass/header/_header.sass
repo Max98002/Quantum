@@ -1,0 +1,112 @@
+.header
+  position: relative
+  z-index: 10
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+  background-color: #ffffff
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 30px
+    padding-bottom: 30px
+  &-search
+    flex: 0.8
+    position: relative
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 2px solid #f5f5f5
+    border-radius: 4px
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 13px
+      transform: translateY(-50%)
+      width: 25px
+      height: 25px
+      background-image: url("../img/header/icon.png")
+      background-repeat: no-repeat
+      background-position: center
+    &__input
+      font-family: Roboto
+      height: 100%
+      padding-left: 45px
+      padding-right: 45px
+      color: #999999
+      font-size: 12px
+      font-weight: 700
+      border: none
+  &-buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-button
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    border: none
+    background: transparent
+    color: #808080
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 500
+    margin-right: 30px
+    padding: 16px 10px
+    &:last-child
+      margin-right: 0
+    &:hover
+      cursor: pointer
+      background-color: #fafafa
+    &:first-child
+      &::before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 30px
+        width: 7px
+        height: 7px
+        border-radius: 50%
+        background-color: #000000
+    &_icon
+      position: relative
+      width: 21px
+      height: 20px
+      min-width: 21px
+      margin-right: 16px
+.logo-link
+  display: inline-block
+  color: #4d4d4d
+  font-size: 22px
+  font-weight: 900
+  letter-spacing: 1.65px
+  line-height: 1
+  text-transform: uppercase
+@media (max-width: 991.98px)
+  .header
+    &-wrap
+      flex-wrap: wrap
+    &-search
+      flex: 1
+      order: 1
+      width: 100%
+      margin-top: 30px
+@media (max-width: 575.98px)
+  .header
+    &-buttons
+      width: 100%
+      margin-top: 30px
+@media (max-width: 354.98px)
+  .header
+    &-buttons
+      flex-direction: column
+      align-items: flex-start
+    &-button
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+
+
+

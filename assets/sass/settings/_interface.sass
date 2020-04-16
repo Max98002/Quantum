@@ -1,0 +1,78 @@
+*, *::after, *::before
+  box-sizing: border-box
+
+input
+  outline: none
+img
+  max-width: 100%
+a
+  text-decoration: none
+  outline: none
+body
+  font-size: 13px
+  background-color: #fafafa
+  font-family: 'Roboto', sans-serif
+::-webkit-input-placeholder
+  color: #999999
+  font-size: 12px
+  font-family: Roboto
+.hidden
+  display: none
+.section
+  &__carousel
+    position: relative
+    margin-bottom: 30px
+.main
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: flex-start
+  align-items: flex-start
+  margin-top: 30px
+  margin-bottom: 30px
+.tag
+  display: inline-block
+  color: #b3b3b3
+  font-size: 10px
+  font-weight: 900
+  letter-spacing: 1.25px
+  line-height: 25px
+  text-transform: uppercase
+  padding: 0 13px
+  border-radius: 4px
+  background-color: #f7f7f7
+.count
+  color: #b3b3b3
+  font-size: 12px
+  font-weight: 900
+  letter-spacing: 1.5px
+.preloaded
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 99999
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #fff
+  padding: 20px
+  &_active
+    display: none
+  &-dialog
+    max-width: 400px
+    padding: 20px
+    width: 100%
+    img
+      display: block
+      margin: 0 auto
+      max-width: 150px
+  &-icon
+    animation-name: loaded
+    animation: loader 3s infinite linear
+@keyframes loader
+  form
+    transform: rotate(0)
+  to
+    transform: rotate(360deg)

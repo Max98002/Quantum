@@ -1,0 +1,79 @@
+.carousel
+  &-wrap
+    z-index: 1
+    position: relative
+  &-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 9
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      border: none
+      background-color: rgba(#000000, 0.3)
+      cursor: pointer
+    &__right
+      margin-left: 80px
+    &__left
+      margin-right: 80px
+  &-item
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    &__image
+      position: relative
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+      border-radius: 6px
+      background-color: rgba(#fff, 0.1 )
+    &__text
+      position: absolute
+      top: 60px
+      left: 50%
+      transform: translateX(-50%)
+      text-align: center
+      margin-bottom: 50px
+    &__title
+      color: #ffffff
+      font-family: Roboto
+      font-size: 30px
+      font-weight: 300
+    &__subtitle
+      color: rgba(#fff, 0.5)
+      font-size: 14px
+      font-weight: 500
+@media (max-width: 991.98px)
+  .carousel
+    &-item
+      &__title
+        font-size: 20px
+      &__text
+        top: 20px
+    &-arrow
+      &__left
+        margin-right: 20px
+      &__right
+        margin-left: 20px
+@media (max-width: 575.98px)
+  .carousel
+    &-item
+      &__title
+        font-size: 16px
+      &__text
+        top: 10px
+    &-arrow
+      &__button
+        width: 30px
+        height: 30px
+        img
+          max-width: 12px
+
+

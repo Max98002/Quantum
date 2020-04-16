@@ -1,0 +1,71 @@
+.select
+  position: relative
+  &__title
+    // min-width: 190px
+    padding: 16px 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &::after
+      content: ''
+      width: 8px
+      height: 5px
+      margin-left: 10px
+      display: inline-block
+      background: url("../img/header/arrow_icon.png") no-repeat right center / cover
+    &_nav
+      span
+        text-transform: capitalize
+      padding: 0
+  &_nav
+    border-right: 2px solid #f5f5f5
+    padding: 22px 28px
+    &:hover
+      background-color: #fafafa
+    &:last-child
+      border: none
+  &-decoration
+    color: #b3b3b3
+    font-family: Roboto
+    font-size: 10px
+    font-weight: 900
+    letter-spacing: 1.25px
+    text-transform: uppercase
+  &__dropdown
+    position: absolute
+    width: 100%
+    top: 103%
+    left: 1px
+    background: #ffffff
+    border: 2px solid #f5f5f5
+    border-top: none
+    &_item
+      display: block
+      padding: 16px 10px
+      border-bottom: 1px solid #f5f5f5
+      &:last-child
+        border-bottom: none
+      &:hover
+        background-color: #fafafa
+    &_active
+      width: 107%
+      left: -4px
+      display: none
+  &:hover
+    .select__dropdown_active
+      display: block
+.select:hover
+  cursor: pointer
+@media (max-width: 1199.98px)
+  .select
+    &_nav
+      padding: 17px 28px
+@media (max-width: 354.98px)
+  .select
+    &__title
+      min-width: 60px
+@media (max-width: 767.98px)
+  .select
+    &_nav
+      border: none
+

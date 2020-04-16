@@ -1,0 +1,80 @@
+.menu
+  width: 255px
+  margin-right: 30px
+  &-block
+    &__box
+      text-align: center
+      padding: 120px 40px
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+      border-radius: 6px
+      background-color: #ffffff
+      &_title
+        margin: 0
+        margin-bottom: 30px
+        color: #666666
+        font-size: 20px
+        font-weight: 500
+      &_sub
+        display: block
+        color: rgba(#666666, 0.3)
+        font-size: 14px
+        font-weight: 500
+.accordion
+  list-style: none
+  padding: 0
+  margin: 0
+  margin-bottom: 30px
+  transition: all 0.4s ease
+  overflow: hidden
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+  border-radius: 6px
+  background-color: #ffffff
+  &-item
+    &__text
+      color: #808080
+      font-size: 13px
+      font-weight: 500
+      line-height: 60px
+    &__image
+      margin-right: 17px
+      &:last-child
+        margin-right: 0
+        margin-left: auto
+.link
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  padding: 0 17px
+  border-bottom: 2px solid #f5f5f5
+  transition: all 0.4s ease
+  &:hover
+    cursor: pointer
+.submenu
+  display: none
+  list-style: none
+  padding: 0
+  margin: 0
+  li
+    border-bottom: 1px solid #f5f5f5
+    background: #ffffff
+    &:last-child
+      border: none
+    &:hover
+      cursor: pointer
+      background: #f5f5f5
+      color: #fff
+    a
+      display: block
+      max-width: 238px
+      overflow: hidden
+      padding: 17px
+      color: #808080
+      white-space: nowrap
+      text-overflow: ellipsis
+.open
+  color: #03b1e7
+.accordion-item__image .open
+  transform: rotate(90deg)
+@media (max-width: 991.98px)
+  .menu
+    display: none

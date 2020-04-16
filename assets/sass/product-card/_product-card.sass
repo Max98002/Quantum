@@ -1,0 +1,129 @@
+.popular
+  &-products
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+.product
+  &-card
+    flex-basis: 30%
+    margin-right: 30px
+    margin-bottom: 30px
+    padding: 20px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+    border-radius: 6px
+    background-color: #ffffff
+    transition: .3s ease-out
+    &:nth-child(3n)
+      margin-right: 0
+    &:hover
+      transition: .3s ease-in
+      box-shadow: 0px 0px 17px grey
+    &__header
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 25px
+    &__favorite
+      &_btn
+        background-color: transparent
+        border: none
+        width: 26px
+        height: 26px
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        &:hover
+          cursor: pointer
+          background-color: #f5f5f5
+        img
+          display: block
+          margin: 0 auto
+    &__image
+      margin: 0 auto
+      width: 225px
+      height: 160px
+      overflow: hidden
+      margin-bottom: 25px
+      img
+        display: block
+        margin: 0 auto
+    &__title
+      margin: 0 auto 18px auto
+      text-align: center
+      max-width: 176px
+      color: #666666
+      font-size: 14px
+      font-weight: 500
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+    &__stars
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      margin-bottom: 22px
+      span
+        display: inline-block
+        margin-right: 5px
+        &:last-child
+          margin-left: 10px
+    &__price
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      span
+        margin-right: 12px
+        color: #666666
+        font-size: 16px
+        font-weight: 900
+      &_btn
+        display: flex
+        justify-content: center
+        align-content: center
+        width: 26px
+        height: 26px
+        border: none
+        background-color: transparent
+        &:hover
+          cursor: pointer
+          background-color: #f5f5f5
+        img
+          display: block
+          margin: 0 auto
+@media (max-width: 1199.98px)
+  .product
+    &-card
+      flex-basis: 45%
+      &:nth-child(2n)
+        margin-right: 0
+@media (max-width: 767.98px)
+  .content
+    &-display
+      display: none
+    &-tab
+      flex: 1
+      justify-content: space-between
+  .product
+    &-card
+      margin: 0
+      margin-bottom: 30px
+@media (max-width: 575.98px)
+  .product
+    &-card
+      flex-basis: 70%
+  .popular
+    &-products
+      justify-content: center
+@media (max-width: 429.98px)
+  .content
+    &-tab
+      &__item
+        margin: 0 10px
+      &__link
+        padding: 20px 10px
+        font-size: 12px
+
+
